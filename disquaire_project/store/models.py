@@ -1,4 +1,4 @@
-from django.db import models
+# from django.db import models
 
 ARTISTS = {
   'francis-cabrel': {'name': 'Francis Cabrel'},
