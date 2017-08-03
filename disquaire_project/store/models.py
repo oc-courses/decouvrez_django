@@ -11,7 +11,7 @@ class Contact(models.Model):
 
 
 class Album(models.Model):
-    reference = models.IntegerField(blank=True)
+    reference = models.IntegerField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     available = models.BooleanField(default=True)
     title = models.CharField(max_length=200)
