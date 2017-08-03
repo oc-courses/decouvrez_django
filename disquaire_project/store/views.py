@@ -8,10 +8,6 @@ def index(request):
     return HttpResponse(message)
 
 def listing(request):
-    albums = [album['name'] for album in ALBUMS]
-    message = """
-        <ul>
-            <li>{}
-        </ul>
-    """.format("</li><li>".join(albums))
+    albums = ["<li>{}</li>".format(album['name']) for album in ALBUMS]
+    message = """<ul>{}</ul>""".format("\n".join(albums))
     return HttpResponse(message)
