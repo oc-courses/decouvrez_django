@@ -1,5 +1,4 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 from django.template import loader
 
 from .models import Album, Artist, Contact, Booking
@@ -19,12 +18,22 @@ def listing(request):
     albums = Album.objects.filter(available=True)
     formatted_albums = ["<li>{}</li>".format(album.title) for album in albums]
     message = """<ul>{}</ul>""".format("\n".join(formatted_albums))
+    context = {
+        'albums': albums
+    }
     return HttpResponse(message)
 
 def detail(request, album_id):
     album = Album.objects.get(pk=album_id)
     artists = " ".join([artist.name for artist in album.artists.all()])
     message = "Le nom de l'album est {}. Il a été écrit par {}".format(album.title, artists)
+    context = {
+        'album_title': album.title,
+        'artists_name': artists_name,
+        'album_id': album.id,
+        'form': form,
+        'thumbnail': album.picture
+    }
     return HttpResponse(message)
 
 def search(request):
@@ -46,5 +55,10 @@ def search(request):
             Nous avons trouvé les albums correspondant à votre requête ! Les voici :
             <ul>{}</ul>
         """.format("</li><li>".join(albums))
+
+    context = {
+        'albums': albums,
+        'query': title
+    }
 
     return HttpResponse(message)
