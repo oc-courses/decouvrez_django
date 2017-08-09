@@ -1,3 +1,10 @@
+<div class="col-lg-12">
+    <hr>
+    <h2 class="intro-text text-center">{{ list_title }}
+    </h2>
+    <hr class="detail-separator">
+</div>
+
 {% for album in albums %}
     <div class="col-sm-4 text-center">
         <a href="{% url 'store:detail' album_id=album.id %}">
