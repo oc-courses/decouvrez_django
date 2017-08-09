@@ -5,15 +5,24 @@
     <hr class="detail-separator">
 </div>
 
-{% for album in albums %}
-    <div class="col-sm-4 text-center">
-        <a href="{% url 'store:detail' album_id=album.id %}">
-          <img class="img-responsive" src="{{ album.picture }}" alt="{{ album.title }}">
-        </a>
-        <h3><a href="/">{{ album.title }}</a></h3>
-        {% for artist in album.artists.all %}
-            <p>{{ artist.name }}</p>
-        {% endfor %}
+{% if albums|length_is:"0" %}
+    <div class="text-center">
+      Palsambleu ! Nous n'avons trouvé aucun résultat à cette requête. Même pas de quoi se ronger la chique !
+      Partez de nouveau à l'abordage !
     </div>
-    {% if forloop.counter|divisibleby:3 %}<div class="clearfix"></div>{% endif %}
-{% endfor %}
+
+{% else %}
+    {% for album in albums %}
+        <div class="col-sm-4 text-center">
+            <a href="{% url 'store:detail' album_id=album.id %}">
+              <img class="img-responsive" src="{{ album.picture }}" alt="{{ album.title }}">
+            </a>
+            <h3><a href="{% url 'store:detail' album_id=album.id %}">{{ album.title }}</a></h3>
+            {% for artist in album.artists.all %}
+                <p>{{ artist.name }}</p>
+            {% endfor %}
+        </div>
+        {% if forloop.counter|divisibleby:3 %}<div class="clearfix"></div>{% endif %}
+    {% endfor %}
+
+{% endif %}
