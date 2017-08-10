@@ -28,3 +28,17 @@
     {% endfor %}
 
 {% endif %}
+
+{% if paginate %}
+  <div class="clearfix"></div>
+  <nav aria-label="">
+    <ul class="pager">
+      {% if albums.has_previous %}
+          <li><a href="?page={{ albums.previous_page_number }}">Précédent</a></li>
+      {% endif %}
+      {% if albums.has_next %}
+          <li><a href="?page={{ albums.next_page_number }}">Suivant</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endif %}
