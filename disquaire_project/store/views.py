@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Album, Artist, Contact, Booking
 
@@ -18,7 +18,7 @@ def listing(request):
     return render(request, 'store/listing.html', context)
 
 def detail(request, album_id):
-    album = Album.objects.get(pk=album_id)
+    album = get_object_or_404(Album, pk=album_id)
     artists = [artist.name for artist in album.artists.all()]
     artists_name = " ".join(artists)
     context = {
@@ -27,6 +27,7 @@ def detail(request, album_id):
         'album_id': album.id,
         'thumbnail': album.picture
     }
+    # solidays
     return render(request, 'store/detail.html', context)
 
 def search(request):
