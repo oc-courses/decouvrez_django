@@ -1,0 +1,14 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+
+    <hr>
+    <h1 class="intro-text text-center">Merci !</h1>
+    <hr class="detail-separator">
+    <p>L'album <em>{{ album_title }}</em> vient d'être retiré des rayonnages. Une main délicate a déposé votre nom sur sa couverture et l'a rangé en vous attendant. Dépêchez-vous ! <em>{{ album_title }}</em> trépigne d'impatience et chante déjà vos louanges.</p>
+    <hr>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZSbuikMdgqA" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+{% endblock %}
