@@ -72,12 +72,9 @@ def detail(request, album_id):
                     return render(request, 'store/merci.html', context)
             except IntegrityError:
                 form.errors['internal'] = "Une erreur interne est apparue. Merci de recommencer votre requête."
-        # else:
-        #     # Form data doesn't match the expected format.
-        #     # Add errors to the template.
-        #     context['errors'] = form.errors.items()
     else:
         form = ContactForm()
+
     context['form'] = form
     context['errors'] = form.errors.items()
     return render(request, 'store/detail.html', context)
