@@ -1,1 +1,1 @@
-web: gunicorn disquaire_project.wsgi --log-file
+web: gunicorn disquaire_project.wsgi
