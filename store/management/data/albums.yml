@@ -1,0 +1,69 @@
+albums:
+  - title: All Day and All of the Night
+    artists:
+      - The Kinks
+    picture: "http://www.soundstation.dk/images/products/large/17/132117-a.jpg"
+  - title: Hi Ho Silver Lining
+    artists:
+      - Jeff Beck
+        The Kinks
+        Chris Andrews
+    picture: "http://www.somanyrecordssolittletime.com/wp-content/uploads/jeff-beck-hi-ho-ps.jpg"
+  - title: Yesterday Man
+    artists:
+      - Chris Andrews
+    picture: "https://ring.cdandlp.com/eddys/photo_grande/115195447.jpg"
+  - title: Friday On My Mind
+    artists:
+      - The Easybeats
+        Lulu
+    picture: "https://images.recordsale.de/600/600/cdpix/e/easy_beats._the_easybeats-friday_on_my_mind.jpg"
+  - title: Here Comes the Night
+    artists:
+      - Them
+      - Van Morrison
+    picture: "https://img.cdandlp.com/2014/10/imgL/117188316.jpg"
+  - title: Hang On Sloopy
+    artists:
+      - The McCoys
+    picture: "https://www.recordsbymail.com/uploads/2-25-16-3/741587.jpg"
+  - title: I'm Alive
+    artists:
+      - The Hollies
+    picture: "https://img.cdandlp.com/2017/02/imgL/118583436.jpg"
+  - title: Silence Is Golden
+    artists:
+      - The Tremeloes
+    picture: "https://www.recordsbymail.com/uploads/4-6-15-1/727153.jpg"
+  - title: Tell It Like It Is
+    artists:
+      - Aaron Neville
+    picture: "https://images.recordsale.de/600/600/cdpix/a/aaron_neville-tell_it_like_it_is(1).jpg"
+  - title: Judy In Disguise (With Glasses)
+    artists:
+      - John Fred and His Playboy Band
+    picture: "https://images.recordsale.de/600/600/cdpix/j/johnfredhisplayboyband-judyindisguise(withglasses).jpg"
+  - title: All Over The World
+    artists:
+      - Francoise Hardy
+    picture: "https://img.cdandlp.com/2017/03/imgL/118664562.jpg"
+  - title: To Sir, With Love
+    artists:
+      - Lulu
+    picture: "https://img.cdandlp.com/2016/11/imgL/118373380.jpg"
+  - title: Sunshine Superman
+    artists:
+      - Donovan
+    picture: "http://2.bp.blogspot.com/-f3YXAB4CIkU/Tpk8_Cl0l8I/AAAAAAAAAOU/dRcKP7Tv5rQ/s400/donovansunshinesuperman.jpg"
+  - title: '98.6'
+    artists:
+      - The Bystanders
+    picture: "http://images.45cat.com/the-bystanders-986-pye-2.jpg"
+  - title: The Happening
+    artists:
+      - The Supremes
+    picture: "http://2.bp.blogspot.com/-ebBCW6bBL2k/UBLN1zSB6hI/AAAAAAAAAHg/7BZotayUC-c/s1600/The+Happening+..jpg"
+  - title: Jumpin' Jack Flash
+    artists:
+      - The Rolling Stones
+    picture: "https://1.bp.blogspot.com/-L1xW7Iwfp3s/WJZo4V6J2lI/AAAAAAAAZ2w/AwEEsZ90vVoHoSNoDu-PYkvFgM1kp5FdgCPcB/s1600/the_rolling_stones-jumpin_jack_flash_s.jpg"
