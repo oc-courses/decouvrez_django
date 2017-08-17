@@ -34,7 +34,7 @@ else:
     DEBUG = True
 
 
-ALLOWED_HOSTS = ['disquaire.herokuapp.com']
+ALLOWED_HOSTS = ['disquaire-middle.herokuapp.com']
 
 
 # Application definition
