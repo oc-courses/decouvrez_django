@@ -94,6 +94,6 @@ def search(request):
     title = "Résultats pour la requête %s"%query
     context = {
         'albums': albums,
-        'query': title
+        'title': title
     }
     return render(request, 'store/search.html', context)
