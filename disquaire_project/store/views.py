@@ -27,7 +27,6 @@ def detail(request, album_id):
         'album_id': album.id,
         'thumbnail': album.picture
     }
-    # solidays
     return render(request, 'store/detail.html', context)
 
 def search(request):
@@ -42,6 +41,6 @@ def search(request):
     title = "Résultats pour la requête %s"%query
     context = {
         'albums': albums,
-        'query': title
+        'title': title
     }
     return render(request, 'store/search.html', context)
