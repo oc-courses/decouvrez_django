@@ -4,6 +4,6 @@ django-debug-toolbar==1.8
 gunicorn==19.7.1
 psycopg2==2.7.3
 pytz==2017.2
-PyYAML==3.12
+PyYAML==5.1
 sqlparse==0.2.3
 whitenoise==3.3.0
